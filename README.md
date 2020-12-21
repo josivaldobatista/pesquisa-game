@@ -78,5 +78,5 @@ yarn start
 
 Josivaldo Batista
 
-https://www.linkedin.com/in/josivaldo-batista-ab738a6a/
+https://www.linkedin.com/in/josivaldobatista/
 
