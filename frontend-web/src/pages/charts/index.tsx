@@ -21,7 +21,7 @@ const initialPieData = {
     series: []
 }
 
-const base_url = 'http://localhost:8080';
+const BASE_URL = 'https://pesquisa-games.herokuapp.com';
 
 const Charts = () => {
 
@@ -31,8 +31,8 @@ const Charts = () => {
 
     useEffect(() => {
         async function getData() {
-            const recordsResponse = await axios.get(`${base_url}/records`);
-            const gamesReponse = await axios.get(`${base_url}/games`);
+            const recordsResponse = await axios.get(`${BASE_URL}/records`);
+            const gamesReponse = await axios.get(`${BASE_URL}/games`);
 
             const barData = buildBarSeries(gamesReponse.data, recordsResponse.data.content)
             setBarChartData(barData);

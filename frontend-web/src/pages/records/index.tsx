@@ -7,7 +7,7 @@ import { formatDate } from './helpers'
 import Pagination from './pagination'
 import Filters from '../../components/filters/filters';
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://pesquisa-games.herokuapp.com';
 
 const Records = () => {
     const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
